@@ -14,7 +14,6 @@ This Angular SSR PoC shows how attacker-controlled `TransferState` keys can prog
 | `/poc/confused-deputy/__proto__`         | Forged policy/tenant state makes SSR perform a privileged request with its own credential. |
 | `/poc/namespaced-safe/__proto__`         | Safe control: `cms:__proto__` does not mutate the prototype.                               |
 
-## Real-world model
 
 The attacker is a low-privileged CMS/plugin editor who can choose a slug and create normal key/value settings. The backend legitimately converts those settings with `Object.fromEntries()`.
 
@@ -76,7 +75,6 @@ The two most important controls are:
 
 The strongest case is `confused-deputy`: policy/bootstrap/profile are substituted, their real endpoints are skipped, and SSR reaches the protected secret endpoint using its server-only credential.
 
-## Severity progression
 
 ```text
 constructor
