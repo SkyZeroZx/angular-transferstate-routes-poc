@@ -1,0 +1,8 @@
+:root { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; color-scheme: dark; }
+body { margin: 0; padding: 24px; background: #111; color: #eee; }
+a { color: #8ab4f8; }
+pre { white-space: pre-wrap; overflow-wrap: anywhere; background: #1c1c1c; border: 1px solid #333; padding: 12px; border-radius: 8px; }
+code { color: #d7ba7d; }
+.ok { color: #81c995; }
+.bad { color: #f28b82; }
+.card { border: 1px solid #333; border-radius: 10px; padding: 16px; margin: 12px 0; }
